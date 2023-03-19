@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+#bg{
+    position: relative;
+    width: 100vw;
+}
+#nav-left{
+    position: absolute;
+    width: 5vw;
+    height: 600vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid black;
+    z-index: 2;
+}
+#menu-line{
+    position: fixed;
+    top: 3%;
+}
+#search-line{
+    position: fixed;
+    top: 10%;
+}
+#nav{
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vmax 6vmax;
+    position: fixed;
+    z-index: 1;
+}
+#nav>button{
+    padding: 1vmax 3vmax;
+    background-color: rgb(190, 0, 28);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#nav>button:hover{
+    background-color: #000;
+    color: #fff;
+}
+#main{
+    position: relative;
+    width: 100%;
+}
+#bottle{
+    position: absolute;
+    top: 2%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#dog{
+    width: 140px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    /* background-color: purple; */
+}
+#page1>h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13vw;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(190, 0, 28);
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+    cursor: default;
+    line-height: 13vw;
+    margin-top: -5vh;
+    position: absolute;
+    top: 20%;
+}
+#lagunitas-stamp{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    z-index: 999;
+}
+#page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page2-part1{
+    width: 50%;
+    height: 100vh;
+    padding-left: 80px;
+}
+#page2-part1>h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1vmax;
+}
+#page2-part1>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: url(lagunitas-texture-background.png);
+    background-position: top;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 8vw;
+    background-color: black;
+    margin-bottom: 1vmax;
+
+}
+#page2-part1>p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 1vmax;
+}
+#page2-part1>button{
+    padding: 1vmax 2vmax;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+#page2-part1>button:hover{
+    background-color: rgb(190, 0, 28);
+    color: #fff;
+}
+#page2-part2{
+    width: 50%;
+    height: 100vh;
+}
+#page2-part2>#box{
+    width: 350px;
+    height: 430px;
+    border: 3px solid black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 7vmax;
+}
+#page2-part2 #box1{
+    margin: 1vmax;
+
+}
+#box1>h5{
+    margin-bottom: 1.5vmax;
+}
+#page2-part2 #line1{
+    width: 300px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 1vmax;
+}
+#box1 #flexibox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-part2 #box2{
+    margin: 1vmax;
+
+}
+#box2>h5{
+    margin-bottom: 1.5vmax;
+}
+#page2-part2 #line2{
+    width: 300px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 1vmax;
+}
+#box2 #flexibox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-part2 #box3{
+    margin: 1vmax;
+
+}
+#box3>h5{
+    margin-bottom: 1.5vmax;
+}
+#page2-part2 #line3{
+    width: 300px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 1vmax;
+}
+#box3 #flexibox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page3>h1{
+    text-align: center;
+    font-size: 12vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3vmax;
+    text-transform: uppercase;
+    background: url(lagunitas-texture-background.png);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(160,23,44);
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+}
+#page3-div{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+#page3-part1{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+#page3-image{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#page3-part1>h5{
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page3-part2{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page3-part2>p{
+    padding: 2vmax 11vmax;
+}
+#page3-part2>h2{
+    padding: 0 11vmax;
+}
+#page4{
+    width: 100%;
+    height: 100vh;
+}
+#page4>h1{
+    text-align: center;
+    font-size: 9vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3vmax;
+    text-transform: uppercase;
+    background: url(lagunitas-texture-background.png);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #000;
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+}
+#page4-image-div{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vmax;
+}
+#page4-image1{
+    transform: rotate(-13deg);
+    margin-right: 5vmax;
+}
+#page4-image2{
+    transform: rotate(-13deg);
+    margin-right: 8vmax;
+}
+#page4-image4{
+    transform: rotate(-13deg);
+    margin-left: 11vmax;
+}
+#page4-image5{
+    transform: rotate(-13deg);
+}
+#page5{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5-part1{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+#page5-bottle{
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 36%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    transform: rotate(-20deg);
+}
+#page5-part1>#page5-red-paint{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 13%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+#page5-part1>h4{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-decoration: underline;
+}
+#page5-part1>p{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 13%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+#page5-part2{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+#page5-part2>#page5-red-paint{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+#page5-part2>h4{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-decoration: underline;
+}
+#page5-part2>p{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+#page5-part2>#page5-black-paint{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+}
+#page5-part2>h5{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 53%;
+    left: 67%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-decoration: underline;
+}
+#page5-part2>h6{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 70%;
+    left: 67%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+#page6{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page6-div-left{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+}
+#page6-div-left>img{
+    width: 85%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+#page6-div-right{
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    padding: 3vmax 6vmax;
+}
+#page6-div-right>h5{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2vmax 0;
+}
+#page6-div-right>h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    word-spacing: -4px;
+}
+#page6-div-right>p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2vmax 0;
+}
+#page6-div-right>button{
+    padding: 1.5vmax 2vmax;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#page6-div-right>button:hover{
+    background-color: rgb(190, 0, 28);
+    color: #fff;
+}
